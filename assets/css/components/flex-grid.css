@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: calc(1200px - var(--l-gutter));
+  max-width: calc(1400px - var(--l-gutter));
   padding: calc(var(--l-gutter) / 2);
 }
 
@@ -40,6 +40,7 @@
 
 .no-gutter {
   padding: 0;
+  
 }
 
 .col {

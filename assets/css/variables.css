@@ -4,6 +4,7 @@
    * Colour palette
    */
   --c-primary: hsl(190, 100%, 40%);
+  --main-kleur: hsla(50, 60%, 50%, 1);
 
   /**
    * Layout

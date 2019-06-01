@@ -7,3 +7,302 @@
 @import url('components/buttons.css');
 @import url('components/forms.css');
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+img {
+    width: 100%;
+}
+
+/* HEADER & NAV */ 
+header {
+    background-image: url(../beelden/cover.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: #444 0 0 10px;
+}
+h1,h2,h3,a {
+    color:  var(--main-kleur);
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+#intro h1{
+    color: #fff;
+    text-shadow: #000 0px 0px 10px;
+    font-size: 55px;
+    font-weight: 500;
+}
+#intro {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    display: block;
+    bottom: 300px;
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: solid 4px var(--main-kleur);
+    box-shadow: #444 0 0 10px;
+    z-index: 1;
+}
+.breed {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.logo {
+    width: 300px;
+    margin-top: 0px;
+    float: left;
+}
+.topnav a {
+    float: right;
+    color: var(--main-kleur);
+    text-align: center;
+    margin-top:0px;
+    padding: 50px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+.topnav a:hover {
+    background-color: #cb8;
+    color: #555;
+}
+.topnav .icon {
+    display: none;
+    font-size: 35px;
+    margin-top: 3px;
+
+}
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* DROPDOWN PIJL */
+
+#dropdown {
+   position: absolute;
+   bottom: 30px;
+   left: 48.5%;
+   display: block;
+}
+#dropdown i {
+   font-size: 60px;
+   color: #fff;
+   transition: 0.3s;
+}
+#dropdown i:hover {
+    color: var(--main-kleur);
+    text-shadow: #000 0 0 30px;
+    transition: 0.3s;
+}
+
+/* BODY */
+
+h2 {
+    padding: 75px 0 75px 0;
+}
+
+#borders {
+    border-top: var(--main-kleur) solid 2px;
+    border-bottom: var(--main-kleur) solid 2px;
+    padding: 25px 0;
+}
+p {
+    text-align: justify;
+    color: #555;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.knop {
+    background-color: var(--main-kleur);
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.knop:hover {
+    transition: 0.3s;
+    background-color: rgba(204, 179, 51, 0.8);
+    color: #555;
+}
+#mt {
+    margin-top: 150px;
+}
+h3 {
+    text-align: center;
+    padding: 8vh 0 3vh 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: #000 0px 0px 10px;
+}
+#kamers,#reservatie,#eten {
+    background-position: center;
+    background-size: cover;
+    margin-top: 15px;
+    width: 100%;
+    box-shadow: #666 0px 0px 15px;
+}
+
+#kamers {
+    background-image: url(../beelden/kamers.jpg);
+}
+#reservatie {
+    background-image: url(../beelden/reservatie.jpg);
+}
+#eten {
+    background-image: url(../beelden/eten.jpg);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 75px;
+    box-shadow: #999 0 0 12px;
+}
+#onderbalk {
+    background-color: rgba(204, 179, 51, 0.40);
+}
+#bovenbalk {
+    background-color: rgba(204, 179, 51, 0.20);
+}
+#bovenbalk ul {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#bovenbalk ul h5 {
+    float: left;
+    width: 22%;
+}
+h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 17px;
+    margin: 0;
+    color: #555;
+}
+footer p {
+    float: left;
+    margin: 0;
+}
+#gegevens {
+    width: 50%;
+}
+#gegevens2 {
+    width: 100%;
+}
+#gegevens2 h5 {
+    padding-top: 23px;
+}
+#socials {
+    font-size: 35px;
+    width: 97%;
+    margin: 0 auto;
+    text-align: center;
+}
+#socials a {
+    color: #555;
+    transition: 0.25s;
+}
+#socials a:hover {
+    color: var(--main-kleur);
+    transition: 0.25s;
+}
+
+
+
+/* MEDIA QUERRIES */
+
+@media screen and (max-width: 420px) {
+    .logo {
+        width: 265px;
+    }
+    .logo h1 {
+        font-size: 30px;
+    }
+    #intro {
+        bottom: 200px;
+    }
+    #intro h1 {
+        font-size: 42px;
+    }
+  }
+
+@media screen and (max-width: 386px) {
+    .logo {
+        width: 250px;
+    }
+    .logo h1 {
+        font-size: 30px;
+    }
+    #intro {
+        bottom: 185px;
+    }
+    #intro h1 {
+        font-size: 35px;
+    }
+  }
+
+@media screen and (max-width: 340px) {
+    .logo {
+        width: 225px;
+    }
+    .logo h1 {
+        font-size: 25px;
+        padding-top: 5px;
+    }
+    #intro {
+        bottom: 150px;
+    }
+  }
+  
+  
+@media screen and (max-width: 1000px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 8px !important;
+    }
+    #contact {
+      margin-top: 110px;
+    }
+    .icon {
+    padding: 35px 20px !important;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+      margin-top: 0;
+      padding: 15px;
+    }
+  }

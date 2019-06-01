@@ -15,3 +15,177 @@
     margin: 2rem 0 .5rem 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
+
+/* Variabelen */ 
+
+:root {
+    --main-kleur: hsla(50, 60%, 50%, 1);
+    --sec-kleur: #555555;
+}
+h4 {
+    text-align: center;
+    padding: 70px 0 40px 0;
+}
+
+/* Kleuren */ 
+#kader {
+    width: 100%;
+    display: flex;
+}
+#primair,#secundair,#footer1,#footer2,#bodykleur {
+    float: left;
+    width: 240px;
+    margin: 5px;
+}
+#primair {
+    background-color: var(--main-kleur);
+}
+#secundair {
+    background-color: var(--sec-kleur);
+}
+#footer1 {
+    background-color: rgba(204, 179, 51, 0.40);
+}
+#footer2 {
+    background-color: rgba(204, 179, 51, 0.20);
+}
+#bodykleur {
+    border: solid 1px var(--sec-kleur);
+}
+
+/* Typo */
+#tekstkaders {
+    float: left;
+    margin: 5px;
+    background-color: #eee;
+    padding: 10px;
+    width: 300px;
+}
+h5 {
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+#titel {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    color:  var(--main-kleur);
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.15em;
+}
+p {
+    text-align: justify;
+    color: var(--sec-kleur);
+    padding: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#paginatitels {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5em;
+    color: var(--main-kleur);
+    text-align: center;
+    font-weight: bold;
+}
+#footertekst {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 0.83em;
+    color: var(--sec-kleur);
+    font-weight: bold;
+    
+}
+
+/* Knoppen */
+
+#reservatie {
+    background-image: url(../beelden/reservatie.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-shadow: #666 0px 0px 15px;
+}
+.knop {
+    background-color: var(--main-kleur);
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.knop:hover {
+    transition: 0.3s;
+    background-color: rgba(204, 179, 51, 0.8);
+    color: #555;
+}
+.button {
+    background-color: var(--main-kleur);
+    border: none;
+    color: white;
+    padding: 16px 120px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  } 
+.button:hover {
+    background-color: rgba(204, 179, 51, 0.40);
+    color: var(--sec-kleur);
+}
+
+#dropdown {
+    margin-left: 115px;
+ }
+ #dropdown i {
+    font-size: 60px;
+    color: #fff;
+    transition: 0.3s;
+ }
+ #dropdown i:hover {
+     color: var(--main-kleur);
+     text-shadow: #000 0 0 30px;
+     transition: 0.3s;
+ }
+
+
+
+ /* Formulieren */ 
+
+ form {
+     color: var(--main-kleur);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 500;
+ }
+ input[type=text] {
+     margin-top: 1px;
+    padding: 5px;
+    color: #555;
+    border: var(--main-kleur) solid 2px;
+    margin-bottom: 10px;
+}
+input[type=submit] {
+    background-color: var(--main-kleur);
+    border: none;
+    color: white;
+    padding: 16px 67px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: rgba(204, 179, 51, 0.40);
+    color: var(--sec-kleur);
+}
