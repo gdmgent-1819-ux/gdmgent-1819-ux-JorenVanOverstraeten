@@ -5,16 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Styleguide</title>
-    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/styleguide.css">
+    <script src="https://kit.fontawesome.com/8051bec1b8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container">
     <h1 class="sg-title">Digital styleguide</h1>
     <h2 class="sg-subtitle">Kleuren</h2>
+    <div id="kader">
+        <div id="primair">
+            <h4>Primaire kleur</h4>
+            <h5>-hsla(50, 60%, 50%, 1)</h5>
+        </div>
+        <div id="secundair">
+            <h4>Secundaire kleur</h4>
+            <h5>-hex( #555555 )</h5>
+        </div>
+        <div id="footer1">
+            <h4>Footer kleur 1</h4>
+            <h5>-rgba(204, 179, 51, 0.40);</h5>
+        </div>
+        <div id="footer2">
+            <h4>Footer kleur 2</h4>
+            <h5>-rgba(204, 179, 51, 0.20);</h5>
+        </div>
+        <div id="bodykleur">
+            <h4>Achtergrond kleur</h4>
+            <h5>-hex( #ffffff )</h5>
+        </div>
+    </div>
     <h2 class="sg-subtitle">Typografie</h2>
+    <div id="kader">
+    <div id="tekstkaders">
+    <h5>Het logo</h5>
+    <p id="titel">St. Maarten<br>Young paradise</p>
+    <h5>
+    font-family: 'Libre Baskerville', serif<br>
+    text-align: center<br>
+    color: Primaire kleur
+    font-size: 2em <br>
+    font-weight: bold <br>
+    line-height: 1.15em</h5>
+    </div>
+    <div id="tekstkaders">
+        <h5>Pagina titels</h5>
+        <p id="paginatitels">Reserveer hier</p>
+        <h5>
+            font-family: 'Libre Baskerville', serif <br>
+            font-size: 1.5em <br>
+            color: Primaire Kleur <br>
+            text-align: center <br>
+            font-weight: bold      
+        </h5>
+    </div>
+    <div id="tekstkaders">
+        <h5>Broodtekst</h5>
+        <p>Dit is de "Broodtekst" dat in mijn site gebruikt is.</p>
+        <h5>
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif <br>
+            text-align: justify <br>
+            color: Secundaire Kleur <br>
+            padding: 10px <br>
+            font-size: 18px <br>
+            line-height: 25px
+        </h5>
+    </div>
+    <div id="tekstkaders">
+        <h5>Footer tekst</h5>
+        <p id="footertekst">&copy; Young Paradise</p>
+        <h5>
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif <br>
+            text-align: center <br>
+            font-size: 0.83em <br>
+            color: Secundaire Kleur <br>
+            font-weight: bold
+        </h5>
+    </div>
+    </div>
     <h2 class="sg-subtitle">Knopppen</h2>
+    <div id="kader">
+        <div id="tekstkaders">
+        <div id="reservatie">
+            <h5>.</h5>
+            <a href="#" class="knop">Reserveer nu</a>
+        </div>
+        </div>
+        <div id="tekstkaders">
+            <h5>Formulier knop</h5>
+            <button class="button">Verzend</button>
+        </div>
+        <div id="tekstkaders">
+            <h5>Dropdown knop</h5>
+            <a href="#scroll" id="dropdown"><i class="far fa-arrow-alt-circle-down"></i></a>
+        </div>
+    </div>
     <h2 class="sg-subtitle">Formulier</h2>
+    <form action="">
+        Voornaam:<br>
+        <input type="text" name="firstname">
+        <br>
+        Achternaam:<br>
+        <input type="text" name="lastname">
+        <br>
+        Telefoon:<br>
+        <input type="text" name="tele">
+        <br>
+        E-Mail:<br>
+        <input type="text" name="email">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form> 
     <h2 class="sg-subtitle">Componenten</h2>
 </div>
 </body>
