@@ -4,9 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eindopdracht UX</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/8051bec1b8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Young Paradise</title>
 </head>
 <body>
+<!-- header + nav -->
+<script>
+    function myFunction() {
+      var x = document.getElementById("hamburger");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+    <header>
+        <nav>
+          <div class="breed">
+            <div class="topnav" id="hamburger">    
+                <div class="logo">
+                    <h1>St. Maarten<br>
+                    Young Paradise</h1>
+                </div>
+                <a href="#contact" id="contact">Contact</a>
+                <a href="#reserveren">Reservatie</a>
+                <a href="#etendrinken">Eten & Drinken</a>
+                <a href="#verblijf">Verblijf</a>
+                <a href="#home">Home</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+          </div>
+        </nav>
+        <div id="intro"><h1>St. Maarten<br>Young Paradise</h1></div>
+        <a href="#scroll" id="dropdown"><i class="far fa-arrow-alt-circle-down"></i></a>
+    </header>
+
+<!-- body -->
+
+    <div class="container">
+        <div id="scroll" class="row">
+          <div class="col-12">
+            <h2>Het hipste vakantie domein op de Caraïben</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div id="borders" class="col-lg-7">
+            <p>Als je jouw strandvakantie wilt doorbrengen op het prachtige eiland Sint Maarten in het prachtige Caraïben wil je natuurlijk wel ergens zitten waar er heel wat te doen is.
+                 Daarom is young Paradise het ideale vakantie domein voor jongvolwassenen opzoek naar feest vakantie en avontuur op een tropische bestemming!</p>
+          </div>
+          <div class="col-1">
+          </div>
+          <div class="col-lg-4">
+            <img src="assets/beelden/11.jpg">
+          </div>
+        </div>
+        <div id="mt" class="row">
+          <div id="kamers" class="col-lg-3">
+            <h3>Onze Kamers</h3>
+            <a href="#" class="knop">Bekijk de kamers</a>
+          </div>
+          <div class="col-1">
+          </div>
+          <div id="reservatie" class="col-lg-4">
+            <h3>Reserveer hier</h3>
+            <a href="#" class="knop">Reserveer nu</a>
+          </div>
+          <div class="col-1">
+          </div>
+          <div id="eten" class="col-lg-3">
+            <h3>Eten & Drinken</h3>
+            <a href="#" class="knop">Ontdek!</a>
+          </div> 
+        </div>
+      </div>
+
+<!-- footer -->
+
+<footer>
+<div id="bovenbalk">
+    <div class="container">
+        <div class="row">
+          <div id="gegevens" class="col-lg-3">
+            <h5>info@youngparadise.be</h5>
+          </div>
+          <div id="gegevens" class="col-lg-3">
+            <h5>+32 (0) 55 47 37 14</h5>
+          </div>
+          <div id="gegevens" class="col-lg-3">
+            <h5>Rue Baie Longue 18, Saint Martin</h5>
+          </div>
+          <div id="gegevens" class="col-lg-3">
+            <h5>Gesloten: December-Februari</h5>
+          </div>
+        </div>
+    </div>
+</div>
+<div id="onderbalk">
+    <div class="container">
+        <div class="row">
+          <div id="gegevens2" class="col-md-4">
+            <p id="socials">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-snapchat-square"></i></a>
+            </p>
+          </div>
+          <div id="gegevens2" class="col-md-4">
+            <h5>&copy; Young Paradise</h5>
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+    </div>
+</div>
+</footer>
+
 </body>
 </html>
